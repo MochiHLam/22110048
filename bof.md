@@ -1,2 +1,2 @@
 ## bof
-'''disas secretFunc
+'disas secretFunc'
