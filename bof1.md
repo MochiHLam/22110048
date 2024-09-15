@@ -1,11 +1,14 @@
 # bof1.c  
 In this attack, we aim to overwrite the return address with the address of a different function (redirect control) using Python!  
 
-# Vulnerbility  
+# Stackframe
+
+
+# Vulnerability  
 At the function `gets(array);` the attacker can control the flow of execution by input larger than 200 bytes  
 
 # Attack  
-Compile file with debugging, no stack protection  
+Compile file without stack protection  
 `gcc -g bof1.c -o bof1.out -fno-stack-protector -mpreferred-stack-boundary=2`
 ![alt text](image.png)
 
