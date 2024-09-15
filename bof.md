@@ -1,2 +1,0 @@
-## bof
-'disas secretFunc'
