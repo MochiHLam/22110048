@@ -68,6 +68,6 @@ _start:
     int 0x80
 
 ```
-This lab 
+This lab explores how to exploit a buffer overflow vulnerability  
 **Question 1**: Exploration of various encryption with openssl
 **Answer 1**:
