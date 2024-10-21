@@ -72,4 +72,4 @@ This lab explores how to exploit a buffer overflow vulnerability
 **Question 1**: Exploration of various encryption with openssl
 **Answer 1**:
 ## 1. Compile asm program and C program to executable code:
-
+Compile the `vuln.c` program without stack protection:
