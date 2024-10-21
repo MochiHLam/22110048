@@ -79,4 +79,35 @@ Compile the Shellcode
 `ld -m elf_i386 -o shellcode shellcode.o`  
 
 
+# Task 2: Attack on database of DVWA
+- Install dvwa (on host machine or docker container)
+- Make sure you can login with default user
+- Install sqlmap
+- Write instructions and screenshots in the answer sections. Strictly follow the below structure for your writeup. 
 
+**Question 1**: Use sqlmap to get information about all available databases
+**Answer 1**:
+1.  Pull the DVWA Docker image  
+Set up the eviroment  
+
+```bash
+docker pull vulnerables/web-dvwa
+docker run -d -p 80:80 vulnerables/web-dvwa
+```
+2.  Access DVWA
+Open a web browser and go to: http://localhost
+Log in with the default credentials:  
+Username: admin  
+Password: password
+![image](https://github.com/user-attachments/assets/a4f05b15-2710-4ea2-9413-2dc902c95a83)
+
+DVWA QL Injection page  
+Input 1 to trigger the SQL injection  
+![image](https://github.com/user-attachments/assets/f25e324a-a3e4-4178-8379-c16550d218c6)  
+
+
+**Question 2**: Use sqlmap to get tables, users information
+**Answer 2**:
+
+**Question 3**: Make use of John the Ripper to disclose the password of all database users from the above exploit
+**Answer 3**:
