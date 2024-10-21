@@ -77,6 +77,8 @@ Compile the `vuln.c` program without stack protection:
 Compile the Shellcode  
 `nasm -f elf32 shellcode.asm -o shellcode.o`  
 `ld -m elf_i386 -o shellcode shellcode.o`  
+![image](https://github.com/user-attachments/assets/e85de773-01cb-4c7e-b2ba-f32b50b8c21d)  
+
 
 
 # Task 2: Attack on database of DVWA
@@ -101,9 +103,17 @@ Username: admin
 Password: password
 ![image](https://github.com/user-attachments/assets/a4f05b15-2710-4ea2-9413-2dc902c95a83)
 
-DVWA QL Injection page  
+DVWA etup DB page  
+Press Create/Reset Database button  
+![image](https://github.com/user-attachments/assets/89b2a4fb-2215-4942-803b-b72d85a1ac0a)  
+
+DVWA SQL Injection page  
 Input 1 to trigger the SQL injection  
 ![image](https://github.com/user-attachments/assets/f25e324a-a3e4-4178-8379-c16550d218c6)  
+
+Get cookies  
+cookie value= r4jevan9nq5tqg2mbm135ma2m6
+![image](https://github.com/user-attachments/assets/2f2f6a01-db0f-4f15-a462-f2a6e270a076)  
 
 
 **Question 2**: Use sqlmap to get tables, users information
