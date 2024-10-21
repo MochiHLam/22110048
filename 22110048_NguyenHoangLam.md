@@ -72,4 +72,11 @@ This lab explores how to exploit a buffer overflow vulnerability
 **Question 1**: Exploration of various encryption with openssl
 **Answer 1**:
 ## 1. Compile asm program and C program to executable code:
-Compile the `vuln.c` program without stack protection:
+Compile the `vuln.c` program without stack protection:  
+`gcc -g vuln.c -o vuln.out -fno-stack-protector -mpreferred-stack-boundary=2`  
+Compile the Shellcode  
+`nasm -f elf32 shellcode.asm -o shellcode.o`  
+`ld -m elf_i386 -o shellcode shellcode.o`  
+
+
+
