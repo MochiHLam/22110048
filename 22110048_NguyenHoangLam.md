@@ -101,4 +101,5 @@ From VMs of previous tasks, install iptables and configure one of the 2 VMs as a
 
 **Answer 1**:
 
+## 1.
 
